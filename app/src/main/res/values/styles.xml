@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BottomNavTheme" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="fontFamily">@font/biryani_regular</item>
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemTextAppearance">@font/biryani_regular</item>
+    </style>
+
+    <style name="NormalText" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/biryani_regular</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TitleText" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/biryani_bold</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+</resources>

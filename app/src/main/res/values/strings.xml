@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewsFetchr</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="general">General</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="business">Business</string>
+    <string name="health">Health</string>
+    <string name="sports">Sports</string>
+    <string name="technology">Technology</string>
+</resources>

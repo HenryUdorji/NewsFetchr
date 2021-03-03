@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_300sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter News"
+            android:fontFamily="@font/biryani_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <RadioGroup
+            android:id="@+id/firstRG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/headTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <RadioButton
+                android:id="@+id/countryRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_weight="50"
+                android:checked="true"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"/>
+
+            <RadioButton
+                android:id="@+id/categoryRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_weight="50"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/countryRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstRG">
+
+            <RadioButton
+                android:id="@+id/usaRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="USA"
+                android:checked="true"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/nigeriaRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="Nigeria"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/indiaRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="India"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/ukRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="United Kingdom"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/chinaRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="China"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/southAfricaRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="South Africa"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/categoryRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstRG">
+
+            <RadioButton
+                android:id="@+id/generalRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="@string/general"
+                android:checked="true"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/entertainmentRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="@string/entertainment"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/businessRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="@string/business"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/healthRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="@string/health"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/sportsRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="@string/sports"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/technologyRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/biryani_regular"
+                android:text="@string/technology"
+                android:textColor="@color/white" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

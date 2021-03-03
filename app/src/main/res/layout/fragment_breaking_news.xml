@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.BreakingNewsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/noNetworkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_network_image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_no_network" />
+
+        <TextView
+            android:id="@+id/networkMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internet connection unavalable, check connection and retry"
+            android:theme="@style/NormalText"
+            android:textSize="@dimen/_13ssp"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlack"
+            android:layout_margin="@dimen/_5sdp" />
+
+        <Button
+            android:id="@+id/retryBtn"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:fontFamily="@font/biryani_regular"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg" />
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
